@@ -1,0 +1,157 @@
+.App {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.popup {
+  --body-font-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem 2.625rem;
+  transition: background .25s ease-in-out;
+  width: 428px;
+}
+
+.heading {
+  color: #e74c3c;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.c-consent__buttons {
+  border-radius: 5px;
+  box-shadow: 0 0 25px #0000001a;
+  overflow: hidden;
+}
+
+.c-consent .button--active {
+  background: #4064eb;
+  color: #fff;
+  pointer-events: none;
+}
+
+.c-consent .button {
+  background: #fefefe;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.2;
+  outline: 0;
+  padding: 0.5rem 1rem;
+  transition: background .25s ease-in-out,color .25s ease-in-out;
+  user-select: none;
+  width: 50%;
+}
+
+.c-auth__intro, .c-dashboard-links .link, .section {
+  background: #fefefe;
+  border-radius: 7px;
+  color: var(--body-font-color);
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  padding: 1rem;
+  position: relative;
+  transition: background .25s ease-in-out,color .25s ease-in-out;
+}
+
+.c-counter {
+  width: 100%;
+}
+
+.c-counter__blocked {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.c-counter__section {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.c-balance {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 100%;
+}
+
+.section--counter {
+  padding-bottom: 0.5rem;
+}
+
+.c-dashboard-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c-dashboard-links .link {
+  width: calc(50% - 0.5rem);
+}
+
+.c-counter__section--count {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.c-counter__section--title {
+  margin: 0;
+  max-width: 50%;
+}
+
+.c-counter__active {
+  display: block;
+  font-size: .9rem;
+  font-weight: 600;
+  text-align: center;
+}

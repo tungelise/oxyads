@@ -1,0 +1,208 @@
+$myColor: red;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $myColor;
+}
+
+.wallpaper--active {
+  opacity: 1;
+  animation: zoomOut 1s;
+}
+
+.blocks {
+  width: 100%;
+  z-index: 1;
+  padding: 2.3rem;
+  display: flex;
+  position: fixed;
+}
+
+.wallpaper {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 2s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("http://127.0.0.1:8000/w1.jpeg");
+}
+
+.wallpaper:before {
+  content: "";
+  mix-blend-mode: multiply;
+  opacity: .5;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(50% 50%,#0000 40%,#222 100%);
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+.widget {
+  z-index: 5;
+  min-width: 65%;
+
+  .widget__heading {
+    color: #e5e5e5;
+    margin-bottom: 1rem;
+    font-family: Metropolis-Regular,sans-serif;
+    font-size: .875rem;
+  }
+
+  .block_1 {
+    // height: 30%;
+    // min-height: 100px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .info {
+    font-size: 22px;
+  }
+
+  .c-bookmarks, .c-suggestions {
+    text-align: left;
+    margin-top: 2.75rem;
+    margin-right: 2rem;
+  }
+}
+
+.c-bookmarks .list, .c-suggestions .list {
+  width: 630px;
+  flex-wrap: wrap;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.c-bookmarks .bookmark, .c-suggestions .bookmark {
+  width: 95px;
+  margin: 0 0.3rem 0.8rem;
+  font-size: .8rem;
+}
+
+.c-bookmarks .bookmark__click, .c-suggestions .bookmark__click {
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.c-bookmarks .bookmark--link, .c-suggestions .bookmark--link {
+  position: relative;
+}
+
+.c-bookmarks .bookmark__click, .c-suggestions .bookmark__click {
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.c-bookmarks .bookmark__icon, .c-suggestions .bookmark__icon {
+  width: 60px;
+  height: 60px;
+  background: #ffffffe6;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: background-color .25s ease-in-out;
+  display: flex;
+  color: #000;
+}
+
+.c-bookmarks .bookmark__name, .c-suggestions .bookmark__name {
+  width: 95px;
+  height: 1rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 0 0 3px #000c;
+  overflow: hidden;
+}
+
+.blocks .time {
+  text-align: right;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-end;
+  display: flex;
+}
+
+.blocks .time .inner {
+  width: 340px;
+}
+
+.clock {
+  font-size: 5rem;
+  animation: fadeIn 2s ease-out,zoomOut 1s;
+}
+
+.clock--time {
+  font-size: 6.25rem;
+}
+
+.clock .unit {
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+}
+
+.c-text-scroll {
+  height: 110px;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-text-scroll .chunk--prev {
+  transform: translateY(-100%);
+}
+
+.c-text-scroll .chunk {
+  width: 100%;
+  transition: transform .5s cubic-bezier(.175,.885,.32,1.275);
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+}
+
+.c-text-scroll .chunk--active {
+  transform: translateY(0);
+}
+
+.c-text-scroll .chunk {
+  width: 100%;
+  transition: transform .5s cubic-bezier(.175,.885,.32,1.275);
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+}
+
+.c-account-link {
+  color: #fff;
+}
+
+.c-greeting__intro {
+  font-size: 2rem;
+}

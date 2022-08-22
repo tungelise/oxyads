@@ -1,0 +1,80 @@
+.card-border-c-green-left {
+  border-left: 4px solid #9ccc65;
+}
+
+.card-border-c-orange-left {
+  border-left: 4px solid #daab77;
+}
+
+.card-border-c-orange-dark-left {
+  border-left: 4px solid #dab19b;
+}
+
+.card-border-c-green-light-left {
+  border-left: 4px solid #a9ccae;
+}
+
+.bg-c-orange {
+  background-color: #daab77;
+}
+
+.bg-c-orange-dark {
+  background-color: #dab19b;
+}
+
+.bg-c-green-light {
+  background-color: #a9ccae;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+.nav-tabs .nav-link.nav-custom {
+  color: #868e96;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.nav-tabs .nav-link.nav-custom.active {
+  color: #3e3636;
+  font-weight: bolder;
+  background-image: linear-gradient(to top, #3e3636 2px,rgba(255,255,255,0) 2px);
+}
+
+.hei-500 {
+  height: 500px;
+}
+
+.p-5px {
+  padding: 5px;
+}
+
+.bg-c-purple {
+  background-color: #d21ea5;
+}
+
+.bg-c-purple-light {
+  background-color: #a57dd5;
+}
+
+.bg-c-yellow-dark {
+  background-color: #f18d01;
+}
+
+.bg-c-grey {
+  background-color: #cddef2;
+}
+
+.bg-c-grey-dark {
+  background-color: #e5e5e5;
+}
+
+ul.selling__wrap li {
+  margin-bottom: 10px;
+}
+
+
+
+
+

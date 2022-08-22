@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter":"adservice.google.com/adsid/google/ui", 
+      "domains": ["*/*"],
+      "resourceTypes": ["main_frame"] 
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter":"www.google.com/gen_204?", 
+      "domains": ["*/*"],
+      "resourceTypes": ["main_frame"] 
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter":"securepubads.g.doubleclick.net", 
+      "domains": ["*/*"],
+      "resourceTypes": ["main_frame"] 
+    }
+  }
+]
