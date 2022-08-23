@@ -301,6 +301,7 @@ class NewCampaignDashboard extends Component {
                                                         <option value="3">Architectural/Surveying Services</option>
                                                         <option value="4">Clothing Rental</option>
                                                         <option value="5">Commercial Equipment</option>
+                                                        <option value="6">Food - Drink</option>
                                                         <option value="100">Other</option>
                                                     </Input>
                                                 </FormGroup>
